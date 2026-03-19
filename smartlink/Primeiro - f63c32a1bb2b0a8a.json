@@ -1,0 +1,63 @@
+[
+  {
+    "id": "f63c32a1bb2b0a8a",
+    "type": "tab",
+    "label": "Primeiro",
+    "disabled": false,
+    "info": "",
+    "env": [],
+    "dbPanelCode": "",
+    "extensionId": "0f45b9d5-47bc-4cf1-9b4c-5d60aab7cd03"
+  },
+  {
+    "id": "bec588fb98663b11",
+    "type": "DBPanel Interceptor",
+    "z": "f63c32a1bb2b0a8a",
+    "tableName": "TIPO_ACOMODACAO",
+    "name": "",
+    "url": "/interceptor/crud/30015",
+    "view": "30015",
+    "executionOrder": 0,
+    "method": "post",
+    "upload": false,
+    "swaggerDoc": "",
+    "x": 270,
+    "y": 220,
+    "wires": [
+      [
+        "edf45b9788ddafde"
+      ]
+    ]
+  },
+  {
+    "id": "ca0e545934700758",
+    "type": "http response",
+    "z": "f63c32a1bb2b0a8a",
+    "name": "",
+    "statusCode": "",
+    "headers": {},
+    "x": 670,
+    "y": 220,
+    "wires": []
+  },
+  {
+    "id": "edf45b9788ddafde",
+    "type": "function",
+    "z": "f63c32a1bb2b0a8a",
+    "name": "function 1",
+    "func": "\nreturn msg;",
+    "outputs": 1,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 480,
+    "y": 160,
+    "wires": [
+      [
+        "ca0e545934700758"
+      ]
+    ]
+  }
+]

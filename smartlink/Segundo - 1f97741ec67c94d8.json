@@ -1,0 +1,72 @@
+[
+  {
+    "id": "1f97741ec67c94d8",
+    "type": "tab",
+    "label": "Segundo",
+    "disabled": false,
+    "info": "",
+    "env": [],
+    "dbPanelCode": "",
+    "extensionId": "0f45b9d5-47bc-4cf1-9b4c-5d60aab7cd03"
+  },
+  {
+    "id": "93e10de5623079c0",
+    "type": "inject",
+    "z": "1f97741ec67c94d8",
+    "name": "",
+    "props": [
+      {
+        "p": "payload"
+      },
+      {
+        "p": "topic",
+        "vt": "str"
+      }
+    ],
+    "repeat": "",
+    "crontab": "",
+    "once": false,
+    "onceDelay": 0.1,
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "x": 220,
+    "y": 160,
+    "wires": [
+      [
+        "e85e833063d0a8c5"
+      ]
+    ]
+  },
+  {
+    "id": "e85e833063d0a8c5",
+    "type": "function",
+    "z": "1f97741ec67c94d8",
+    "name": "function 2",
+    "func": "\nreturn msg;",
+    "outputs": 1,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 440,
+    "y": 160,
+    "wires": [
+      [
+        "64a47ac53a4e279c"
+      ]
+    ]
+  },
+  {
+    "id": "64a47ac53a4e279c",
+    "type": "tasy data access",
+    "z": "1f97741ec67c94d8",
+    "name": "",
+    "x": 680,
+    "y": 160,
+    "wires": [
+      []
+    ]
+  }
+]
